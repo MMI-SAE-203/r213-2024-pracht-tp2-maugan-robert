@@ -18,7 +18,6 @@ onErrorCaptured((err, instance, info) => {
       </ul>
     </nav>
   </header>
-  <MaisonCard v-bind="maisonsListe[0]" />
   <RouterView v-slot="{ Component }">
     <Suspense>
       <component :is="Component" />
