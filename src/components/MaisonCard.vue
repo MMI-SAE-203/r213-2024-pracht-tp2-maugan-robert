@@ -1,24 +1,17 @@
-<script setup lang=ts>
-import type { MaisonRecord } from '@/types'
+<script setup lang="ts">
+  import type { MaisonResponse } from '@/pocketbase-types'
+  import ImgPb from './ImgPb.vue'
 
-const props: MaisonRecord = defineProps<MaisonRecord>()
+  const  = defineProps<MaisonResponse>()
 </script>
 <template>
-<div
-    class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative rounded-lg bg-white border-[1.5px] border-indigo-100"
-  >
+<div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative rounded-lg bg-white border-[1.5px] border-indigo-100">
     <div class="self-stretch flex-grow-0 flex-shrink-0 h-[200px]">
-      <div
-        class="w-[360px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500"
-      ></div>
-      <img
-        src="/"
-        class="w-[360px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
-      />
+      <div class="w-[360px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500">
+      </div>
+      <img src="/" class="w-[360px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"/>
     </div>
-    <div
-      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4 px-5 py-7"
-    >
+    <div class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4 px-5 py-7">
       <div class="flex justify-between items-start self-stretch flex-grow-0 flex-shrink-0 relative">
         <div class="flex-grow-0 flex-shrink-0 w-[249px] h-[75px]">
           <div class="flex justify-start items-end w-[164.11px] absolute left-0 top-0 gap-0.5">
@@ -29,9 +22,8 @@ const props: MaisonRecord = defineProps<MaisonRecord>()
               /month
             </p>
           </div>
-          <p
-            class="w-[249px] absolute left-0 top-[43px] text-2xl font-semibold text-left text-gray-900"
-          >
+          <p class="w-[249px] absolute left-0 top-[43px] text-2xl font-semibold text-left text-gray-900"
+ >
             Cover Red
           </p>
         </div>
